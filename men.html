@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head><title>Men</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<h2>Men Products</h2>
+<select onchange="filterPrice(this.value)">
+<option value="all">All</option>
+<option value="500">Below ₹500</option>
+<option value="1000">Below ₹1000</option>
+</select>
+<div class="products" id="product-list">
+  <div class="card" data-price="499">
+    <img src="https://via.placeholder.com/150">
+    <h3>T-Shirt</h3>
+    <p>₹499</p>
+    <p>⭐⭐⭐⭐</p>
+    <button onclick="addToCart('T-Shirt',499)">Cart</button>
+    <button onclick="addToWishlist('T-Shirt')">❤</button>
+  </div>
+
+  <div class="card" data-price="799">
+    <img src="https://via.placeholder.com/150">
+    <h3>Shirt</h3>
+    <p>₹799</p>
+    <p>⭐⭐⭐⭐⭐</p>
+    <button onclick="addToCart('Shirt',799)">Cart</button>
+    <button onclick="addToWishlist('Shirt')">❤</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
